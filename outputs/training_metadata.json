@@ -1,0 +1,23 @@
+{
+  "training_date": "2025-12-09T12:50:28.435514",
+  "total_images": 20580,
+  "train_images": 16464,
+  "val_images": 4116,
+  "num_classes": 120,
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "total_epochs": 30,
+  "architecture": "MobileNetV2 + Custom Head",
+  "base_model_trainable_layers": 30,
+  "final_metrics": {
+    "train_accuracy": 0.7934280633926392,
+    "val_accuracy": 0.7694363594055176,
+    "train_loss": 0.9678381681442261,
+    "val_loss": 1.0024738311767578,
+    "best_val_accuracy": 0.7694363594055176,
+    "best_val_top5_accuracy": 0.9657434225082397
+  }
+}

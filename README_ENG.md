@@ -20,9 +20,9 @@ A deep learning-based image classification system that identifies dog breeds fro
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Model Architecture](#-model-architecture)
+- [Model Architecture](#%EF%B8%8F-model-architecture)
 - [Dataset](#-dataset)
-- [Installation](#-installation)
+- [Installation](#%EF%B8%8F-installation)
 - [Usage](#-usage)
 - [Results](#-results)
 - [Project Structure](#-project-structure)
@@ -232,13 +232,13 @@ python predict.py --input_dir images/ --output predictions.csv
 
 ### Training Curves
 <div align="center">
-  <img src="training_curves.png" alt="Training Curves" width="800"/>
+  <img src="outputs/training_curves.png" alt="Training Curves" width="800"/>
   <p><i>Loss, Accuracy, and Top-5 Accuracy across all training epochs</i></p>
 </div>
 
 ### Confusion Matrix
 <div align="center">
-  <img src="confusion_matrix.png" alt="Confusion Matrix" width="600"/>
+  <img src="outputs/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
   <p><i>Confusion matrix showing model performance across 120 breeds</i></p>
 </div>
 
@@ -508,6 +508,6 @@ If you find this project helpful, please consider giving it a star! ⭐
 <div align="center">
   <p>Made with ❤️ and 🐕 by Akalanka</p>
   <p>
-    <a href="#-dog-breed-classifier-using-deep-learning">Back to Top ⬆️</a>
+    <a href="#dog-breed-classifier-using-deep-learning">Back to Top ⬆️</a>
   </p>
 </div>

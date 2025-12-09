@@ -1,19 +1,220 @@
 [🇬🇧 English version](README_ENG.md)
 
-# Классификатор пород собак с использованием глубокого обучения 
-
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![TensorFlow 2.x](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Kaggle](https://img.shields.io/badge/platform-Kaggle-20BEFF.svg)](https://www.kaggle.com/)
-
-Система классификации изображений на основе глубокого обучения, которая определяет породы собак по фотографиям с использованием трансферного обучения и архитектуры MobileNetV2. Модель достигает **точности 85-90% (Top-1)** и **95-98% (Top-5)** на 120 различных породах собак.
-
 <div align="center">
-  <img src="presentation_assets/single_prediction.png" alt="Пример предсказания" width="400"/>
-  <img src="presentation_assets/integrated_gradients_overlay.png" alt="Объяснимый ИИ" width="400"/>
-  <p><i>Слева: Предсказание модели с уровнем уверенности | Справа: Визуализация Integrated Gradients, показывающая процесс принятия решения ИИ</i></p>
-</div>
+
+<!-- ============================================ -->
+<!--            RUDN HEADER SECTION              -->
+<!-- ============================================ -->
+
+<a href="https://www.rudn.ru/">
+  <img src="https://www.rudn.ru/storage/media/page/ad617588-2479-4279-bd77-917262b03284/tB4D7Qxy8MNDxs1VNaazYF5DlwLLPtByduij72rZ.png" alt="РУДН" height="80"/>
+</a>
+
+<h1>
+  Классификатор пород собак<br/>
+  <sub>с использованием глубокого обучения</sub>
+</h1>
+
+> **Итоговый проект курса**  
+> [«Искусственный интеллект на языке Python»](https://dpo-top.rudn.ru/python-ai)  
+
+
+
+<!-- ============================================ -->
+<!--          STUDENT INFO CARD                  -->
+<!-- ============================================ -->
+
+<table>
+<tr>
+<td align="center" style="border: 2px solid #004d99; padding: 20px; border-radius: 10px;">
+
+### 👨‍🎓 Обо мне
+
+<table>
+<tr><td align="right"><b>ФИО:</b></td><td align="left">Ранасингхе Акаланка</td></tr>
+<tr><td align="right"><b>Институт:</b></td><td align="left"> Медицинский институт</td></tr>
+<tr><td align="right"><b>Университет:</b></td><td align="left"><a href="https://www.rudn.ru/">РУДН</a></td></tr>
+<tr><td align="right"><b>Группа:</b></td><td align="left"> МЛ-503 (2025-26)</td></tr>
+<tr><td align="right"><b>Номер СБ:</b></td><td align="left">1032205915</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ============================================ -->
+<!--          TECHNOLOGY STACK                   -->
+<!-- ============================================ -->
+
+### 🛠️ Технологический стек
+
+<table>
+<tr>
+<td align="center"><b>🧠 Фреймворки глубокого обучения</b></td>
+</tr>
+<tr>
+<td>
+
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
+
+</td>
+</tr>
+<tr>
+<td align="center"><b>📊 Библиотеки для анализа данных</b></td>
+</tr>
+<tr>
+<td>
+
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge)](https://seaborn.pydata.org/)
+
+</td>
+</tr>
+<tr>
+<td align="center"><b>🖼️ Обработка изображений</b></td>
+</tr>
+<tr>
+<td>
+
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
+[![PIL](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge)](https://pillow.readthedocs.io/)
+
+</td>
+</tr>
+<tr>
+<td align="center"><b>⚙️ Инструменты разработки</b></td>
+</tr>
+<tr>
+<td>
+
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ============================================ -->
+<!--          PROJECT METRICS                    -->
+<!-- ============================================ -->
+
+### 🏆 Метрики производительности
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/accuracy.png" width="50"/><br/>
+<b>Top-1 Accuracy</b><br/>
+<h2>85-90%</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/medal.png" width="50"/><br/>
+<b>Top-5 Accuracy</b><br/>
+<h2>95-98%</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/dog.png" width="50"/><br/>
+<b>Породы собак</b><br/>
+<h2>120</h2>
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/speed.png" width="50"/><br/>
+<b>Инференция</b><br/>
+<h2>~50 мс</h2>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://img.icons8.com/color/96/000000/database.png" width="50"/><br/>
+<b>Датасет</b><br/>
+Stanford Dogs<br/>
+<small>20,580 изображений</small>
+</td>
+<td align="center" width="33%">
+<img src="https://img.icons8.com/color/96/000000/brain.png" width="50"/><br/>
+<b>Архитектура</b><br/>
+MobileNetV2<br/>
+<small>Transfer Learning</small>
+</td>
+<td align="center" width="33%">
+<img src="https://img.icons8.com/color/96/000000/download.png" width="50"/><br/>
+<b>Размер модели</b><br/>
+~14 МБ<br/>
+<small>Компактная и эффективная</small>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ============================================ -->
+<!--          VISUAL EXAMPLES                    -->
+<!-- ============================================ -->
+
+### 🖼️ Примеры работы системы
+
+<table>
+<tr>
+<td align="center">
+<img src="presentation_assets/single_prediction.png" alt="Предсказание" width="380"/>
+<br/>
+<b>Предсказание модели</b><br/>
+<sub>Высокая уверенность классификации</sub>
+</td>
+<td align="center">
+<img src="presentation_assets/integrated_gradients_overlay.png" alt="Интерпретация" width="380"/>
+<br/>
+<b>Integrated Gradients</b><br/>
+<sub>Визуализация решений модели</sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ============================================ -->
+<!--          KEY FEATURES                       -->
+<!-- ============================================ -->
+
+### ✨ Ключевые особенности проекта
+
+```mermaid
+graph LR
+    A[Входное<br/>изображение] --> B[MobileNetV2<br/>Feature Extraction]
+    B --> C[Dense Layer<br/>256 neurons]
+    C --> D[Softmax<br/>120 classes]
+    D --> E[Предсказание<br/>породы]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1f5
+    style D fill:#e1ffe1
+    style E fill:#f5e1ff
+```
+
+```
+🎯 Высокая точность классификации (85-90%)
+🚀 Быстрая инференция (50 мс на изображение)
+🔍 Объяснимый ИИ через Integrated Gradients
+📱 Компактная модель для мобильных устройств
+🔄 Двухэтапное обучение (Transfer Learning + Fine-tuning)
+📊 Комплексные метрики оценки качества
+📚 Полная документация (RU + EN)
+```
 
 ---
 

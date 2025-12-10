@@ -186,24 +186,8 @@ MobileNetV2<br/>
 
 <br/>
 
-<!-- ============================================ -->
-<!--          KEY FEATURES                       -->
-<!-- ============================================ -->
-
-```mermaid
-graph LR
-    A[Входное<br/>изображение] --> B[MobileNetV2<br/>Feature Extraction]
-    B --> C[Dense Layer<br/>256 neurons]
-    C --> D[Softmax<br/>120 classes]
-    D --> E[Предсказание<br/>породы]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
-    style E fill:#f5e1ff
-```
 </div>
+
 ---
 
 ## 📋 Содержание

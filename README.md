@@ -153,7 +153,7 @@ MobileNetV2<br/>
 <td align="center" width="33%">
 <img src="https://img.icons8.com/color/96/000000/download.png" width="50"/><br/>
 <b>Размер модели</b><br/>
-~14 МБ<br/>
+~25 МБ<br/>
 <small>Компактная и эффективная</small>
 </td>
 </tr>
